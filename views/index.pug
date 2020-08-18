@@ -1,0 +1,28 @@
+extends layout
+
+block layout-content
+  div.indexDiv
+    div.View.WelcomeView
+      div.View
+        h1.Banner TITLE
+        div.Message
+          div.Title
+          h3 Making the Best
+          form(action="/user" method="post")
+            label(for="name") Name:
+            input(type="text" name="name" placeholder="User Name") 
+            button(type="submit") click
+          h3 New Form
+          form(action="/newForm" method="post")
+            div
+              label(for="name") Full Name:
+              input(type="text" name="full_name" placeholder="Full Name") 
+            div
+              label(for="name") Subject:
+              input(type="text" name="subject" placeholder="Subject") 
+            div
+              label(for="name") Message:
+            div
+             textarea(name="message", cols="30", rows="10", placeholder="Enter your message here")
+            button(type="submit") click
+

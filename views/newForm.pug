@@ -1,0 +1,11 @@
+extends layout
+
+block layout-content
+    div.View.UserView
+        h1.Banner Howdy, #{form.full_name}!
+        div.Title
+            h1 Your form details:
+        div.Details
+            h3 Full Name: #{form.full_name}
+            h3 Subject: #{form.subject}
+            h3 Message: #{form.message}
